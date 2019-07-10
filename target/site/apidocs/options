@@ -1,0 +1,24 @@
+-classpath
+'/home/ani/.m2/repository/org/xerial/sqlite-jdbc/3.27.2.1/sqlite-jdbc-3.27.2.1.jar'
+-encoding
+'UTF-8'
+-protected
+-sourcepath
+'/home/ani/NetBeansProjects/MethodTraceAnalyser/src/main/java'
+-author
+-bottom
+'Copyright &#169; 2019. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'/home/ani/NetBeansProjects/MethodTraceAnalyser/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'Method Trace Analyser 1.0-SNAPSHOT API'
+-linkoffline
+'https://docs.oracle.com/javase/8/docs/api' '/home/ani/NetBeansProjects/MethodTraceAnalyser/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'Method Trace Analyser 1.0-SNAPSHOT API'
