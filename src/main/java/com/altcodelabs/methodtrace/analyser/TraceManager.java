@@ -57,7 +57,9 @@ public class TraceManager {
      * database files and stores them in connects variable.
      */
     public void loadTraces() {
-        File file = new File(Preferences.getPreferences().config.get("ws"));
+        String workspace=Preferences.getPreferences().config.get("ws");
+        System.out.println(workspace);
+        File file = new File(workspace);
         for (File file1 : file.listFiles((File dir, String name) -> name.toLowerCase().endsWith(".fmt.db") //To change body of generated methods, choose Tools | Templates.
         )) {
             if (loadTrace(file1.getName().substring(0, file1.getName().length() - 7), file1.getAbsolutePath())) {

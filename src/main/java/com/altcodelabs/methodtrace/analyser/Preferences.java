@@ -80,9 +80,9 @@ public class Preferences {
                 if (!configStr.isEmpty()) {
                     String configl[] = configStr.trim().split("\n");
                     for (String line : configl) {
-                        String[] lineArr = line.split(":");
-                        if (lineArr.length == 2) {
-                            config.put(lineArr[0], lineArr[1]);
+                        int loc=line.indexOf(':');
+                        if (loc > 1 && loc < line.length()-1) {
+                            config.put(line.substring(0, loc),line.substring(loc+1));
                         }
                     }
                     return true;
@@ -101,10 +101,6 @@ public class Preferences {
      * @return The current preferences of the application.
      */
     public static Preferences getPreferences() {
-        if (PREF == null) {
-            return PREF;
-        } else {
-            return PREF;
-        }
+        return PREF;
     }
 }
