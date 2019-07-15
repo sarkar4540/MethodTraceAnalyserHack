@@ -217,7 +217,7 @@ public class PreferencesFrame extends javax.swing.JFrame {
             }
             File[] files1 = file.listFiles((File dir, String name1) -> name1.equals("bin"));
             if (files1.length > 0) {
-                File[] files2 = files1[0].listFiles((File dir, String name1) -> name1.equals("java"));
+                File[] files2 = files1[0].listFiles((File dir, String name1) -> name1.startsWith("java"));
                 if (files2.length > 0) {
                     jreLocationEdit.setText(file.getAbsolutePath());
                     return;
