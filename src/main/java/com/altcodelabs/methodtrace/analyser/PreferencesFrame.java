@@ -51,7 +51,18 @@ public class PreferencesFrame extends javax.swing.JFrame {
             setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         }
         workSpaceEdit.setText(pref.config.getOrDefault("ws", (System.getProperty("user.home") + File.separator + "xtracer")));
-        jreLocationEdit.setText(pref.config.getOrDefault("jre", System.getProperty("java.home")));
+        String jre = pref.config.getOrDefault("jre", "");
+        if (jre.isEmpty()) {
+            File file = new File(System.getProperty("java.home"));
+            File[] files = file.listFiles((File dir, String name) -> name.equals("jre"));
+            if (files.length > 0) {
+                file = files[0];
+            }
+            jreLocationEdit.setText(file.getAbsolutePath());
+        } else {
+            jreLocationEdit.setText(jre);
+        }
+
     }
 
     Preferences pref;
