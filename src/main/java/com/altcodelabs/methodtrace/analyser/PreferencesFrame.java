@@ -209,7 +209,12 @@ public class PreferencesFrame extends javax.swing.JFrame {
     private void jreBrowseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jreBrowseActionPerformed
 
         File file = browseDirectory();
+
         if (file != null) {
+            File[] files = file.listFiles((File dir, String name) -> name.equals("jre"));
+            if (files.length > 0) {
+                file = files[0];
+            }
             File[] files1 = file.listFiles((File dir, String name1) -> name1.equals("bin"));
             if (files1.length > 0) {
                 File[] files2 = files1[0].listFiles((File dir, String name1) -> name1.equals("java"));
