@@ -10,15 +10,15 @@ Requires IBM Java 8 or highier
 
 ## Obtaining Binaries
 
-The Java Binary Archives or *.jar files can be obtained from [here](target/).
+The Java Binary Archive or *.jar file can be obtained from [here](target/MethodTraceAnalyser-1.0-SNAPSHOT-jar-with-dependencies.jar).
 
 ## Starting the application
 
 ```bash
-java -jar [PATH_TO_JAR_FILE]/MethodTraceAnalyser-1.0-SNAPSHOT.jar
+java -jar [PATH_TO_JAR_FILE]/MethodTraceAnalyser-1.0-SNAPSHOT-jar-with-dependencies.jar
 ```
 
-On first start, you must specify the Workspace directory, and the IBM JRE Installation Location.
+On first start, you must specify the Workspace directory, and the IBM or OpenJ9 JRE Installation Location.
 
 ## Using the application
 
@@ -50,25 +50,25 @@ On single selected trace, you can run SQL queries on the data of XTrace. The que
 
 Any two selected traces can be used to find the difference between them. On clicking on the `Compute Difference` button or `Tools` -> `Compute Difference` menu entry, a new tab shall open which will consist of a table with three columns, two with respective trace names and one `common` in the middle. The columns with trace names will contain the method trace invocations found only in the respective traces, while the column `common` shall contain the invocations found in both.
 
-This operation can be used to compare the method trace invocations of a passing case and a failing case.
+This operation can be used to **compare the method trace invocations of a passing case and a failing case**.
 
 #### Method Tree
 
-Of a single selected trace, you can find the method tree which shows the method trace invocations as a tree. The tree also highlights the methods which are taking large amount of computation time, which have exceptions and which have incomplete executions. On clicking on the `Method Tree` button or `Tools` -> `Method Tree` menu entry, a new tab shall open which will consist of a tree with the aforementioned description. On double-clicking on any entry of the tree, the description about the methods are shown along with its stacktrace.
+Of a single selected trace, you can find the method tree which shows the **method trace invocations as a tree**. The tree also highlights the methods which are **taking large amount of computation time, which have exceptions and which have incomplete executions**. On clicking on the `Method Tree` button or `Tools` -> `Method Tree` menu entry, a new tab shall open which will consist of a tree with the aforementioned description. On double-clicking on any entry of the tree, the description about the methods are shown along with its stacktrace.
 
 On selection of multiple traces, a comparative view containing trees of all the selected traces is loaded.
 
 #### Method Stats
 
-Of a single selected trace, you can find the method invocation counts, which shows the frequency of invocations of each methods in tabular, and ajdacently as histogram form. On clicking on the `Method Stats` button or `Tools` -> `Method Stats` menu entry, a new tab shall open which will consist of a table with the aforementioned description.
+Of a single selected trace, you can find the method invocation counts, which **shows the frequency of invocations of each methods in tabular, and ajdacently as histogram form**. On clicking on the `Method Stats` button or `Tools` -> `Method Stats` menu entry, a new tab shall open which will consist of a table with the aforementioned description.
 
 On selection of multiple traces, a comparative view containing method invocation counts about all the selected traces is loaded.
 
 ## Obtaining Sources
 
 ```bash
-git clone https://github.com/sarkar4540/MethodTraceAnalyser.git
-cd MethodTraceAnalyser
+git clone https://github.com/sarkar4540/MethodTraceAnalyserHack.git
+cd MethodTraceAnalyserHack
 ```
 
 # Documentation
