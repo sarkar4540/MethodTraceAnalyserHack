@@ -75,7 +75,7 @@ cd MethodTraceAnalyserHack
 
 # Documentation
 
-The idea and concepts can be obtained from the [white paper](the_idea.pdf) and the method usages can be obtained from the [javadoc](target/site/apidocs) of the project.
+The idea and concepts can be obtained from the [Ideation Document](Idea.pdf), [Presentation](Presentation.pptx) and the method usages can be obtained from the [javadoc](target/site/apidocs) of the project.
 
 # Dependencies
 
