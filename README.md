@@ -8,6 +8,8 @@ Requires IBM Java 8 or highier
 
 # Usage
 
+A demonstration of the application can be seen on [Youtube](https://youtu.be/96nsZEiTkmQ).
+
 ## Obtaining Binaries
 
 The Java Binary Archive or *.jar file can be obtained from [here](target/MethodTraceAnalyser-1.0-SNAPSHOT-jar-with-dependencies.jar).
