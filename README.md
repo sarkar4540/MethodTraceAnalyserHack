@@ -17,7 +17,7 @@ The Java Binary Archive or *.jar file can be obtained from [here](target/MethodT
 ## Starting the application
 
 ```bash
-[IBM_JDK_HOME]/bin/java -jar [PATH_TO_JAR_FILE]/MethodTraceAnalyser-1.0-SNAPSHOT-jar-with-dependencies.jar
+[IBM_OPENJ9_JDK_HOME]/jre/bin/java -jar [PATH_TO_JAR_FILE]/MethodTraceAnalyser-1.0-SNAPSHOT-jar-with-dependencies.jar
 ```
 
 On first start, you must specify the Workspace directory, and the IBM or OpenJ9 JRE Installation Location.
